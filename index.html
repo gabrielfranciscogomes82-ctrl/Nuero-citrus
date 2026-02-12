@@ -1,0 +1,64 @@
+<h1>Black Citrus</h1>
+<p>This coffee is unlike anything you've ever seen.</p>
+<button onclick="abrirsite()">i wanna buy</button>
+<style>
+    body {
+        background-color: #e6b66f; /* Aqui você escolhe a cor. Ex: #1a1a1a é um cinza bem escuro */
+        
+        /* Mantendo o alinhamento que você pediu */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        color: white; /* Cor do texto para não sumir no fundo escuro */
+        font-family: sans-serif;
+    }
+
+    button {
+    /* 1. Arredondar os cantos */
+    border-radius: 30px; 
+    
+    /* 2. Tirar a borda padrão cinza */
+    border: none; 
+    
+    /* 3. Espaço interno (deixa o botão maior) */
+    padding: 12px 30px; 
+    
+    /* 4. Sombra para dar profundidade */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    
+    /* 5. Estilo do texto e cursor */
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    
+    /* 6. Transição suave ao passar o mouse */
+    transition: 0.3s;
+}
+
+/* Efeito quando você passa o mouse por cima */
+button:hover {
+    transform: scale(1.05); /* O botão cresce um pouquinho */
+    background-color: #ff8c00; /* Muda para laranja */
+    color: white;
+}
+
+/* Quando a tela for menor que 600px (celulares) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem; /* Diminui um pouco o título no celular */
+    }
+    p {
+        font-size: 1rem;
+        padding: 0 20px; /* Garante que o texto não cole nas bordas da tela */
+    }
+    button {
+        width: 80%; /* O botão fica maior para ser fácil de apertar com o polegar */
+    }
+}
+</style>
+
+<script src="java.js"></script>

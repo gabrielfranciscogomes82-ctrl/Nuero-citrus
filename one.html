@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Black Citrus - Finalizar Pedido</title>
+    <style>
+        body {
+            background-color: #e0ac69; /* Cor de fundo que você escolheu nos prints */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        /* Estilo do Formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 320px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        input, textarea {
+            padding: 12px;
+            border-radius: 30px; /* Botões e campos arredondados */
+            border: none;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        textarea {
+            border-radius: 20px;
+            height: 80px;
+            resize: none;
+        }
+
+        /* Botão de Enviar */
+        .btn-enviar {
+            background-color: #ff8c00;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            padding: 12px;
+            border-radius: 30px;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .btn-enviar:hover {
+            background-color: #e67e00;
+            transform: scale(1.05);
+        }
+
+        /* Botão de Voltar */
+        .btn-voltar {
+            margin-top: 20px;
+            background: none;
+            border: 1px solid white;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-voltar:hover {
+            background: white;
+            color: #e0ac69;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>i´m Gabriel and i´m CEO, welcome</h1>
+
+    <form action="https://formspree.io/f/xojnjono" method="POST">
+        
+        <input type="text" name="nome" placeholder="Seu Nome" required>
+        
+        <input type="email" name="email" placeholder="Seu E-mail" required>
+        
+        <textarea name="pedido" placeholder="Qual café você deseja?"></textarea>
+
+        <button type="submit" class="btn-enviar">Finalizar Pedido</button>
+    
+    </form>
+
+    <button class="btn-voltar" onclick="goback()">Go back to home</button>
+
+    <script src="java.js"></script>
+</body>
+</html>
